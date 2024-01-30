@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Shahar Ovadia</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Poppins:wght@200&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar(event)> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./about.html" class="active">About</a></li>
+                <li><a href="./skills.html">Skills</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+
+        <nav>
+            <a href="../index.html">Ovadia</a>
+            <ul>
+                <li class="hideOnMobile"><a href="../index.html">Home</a></li>
+                <li class="hideOnMobile"><a href="about.html" class="active">About</a></li>
+                <li class="hideOnMobile"><a href="skills.html">Skills</a></li>
+                <li class="hideOnMobile"><a href="projects.html">Projects</a></li>
+                <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+                <li class ="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="30"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+        <script>
+            function showSidebar()
+            {
+                const sidebar = document.querySelector('.sidebar');
+                sidebar.style.display = 'flex';
+            }
+
+            function hideSidebar(event)
+            {
+                event.preventDefault();
+                const sidebar = document.querySelector('.sidebar');
+                sidebar.style.display = 'none';
+            }
+        </script>
+    </header>
+
+    <main class="about">
+        <img src="../Images/MyImage.jpeg" alt="about Image">
+        <article>
+            <h2>About me</h2>
+            <p>
+                My name is Shahar. I am a student of Industrial & Management Engineering enrolled at 
+                Ruppin Academic Center. Prior to joining Ruppin, I attended Kadoorie High School, 
+                where I specialized in Biology and Geography and graduated with distinction,
+                Later then i was combat soldier on "Givati" brigade special forces, sabotage and 
+                engineering team.
+                In the last four months of service, served as a squad leader and operations coordinator,
+                assisting the platoon commander and managing tasks and resources.
+                I consider myself reliable, diligent, devoted, good at working with people, highly 
+                organized
+                and detail-oriented, eager to learn and deepen my knowledge, loyal and pleasant.
+                seeking an opportunity to begin my journey in the field, ideally in a student position
+
+
+            <h2>Vision</h2>
+            <p>
+            Passionate about Industrial & Management Engineering, I'm all in on 
+            blending my skills with a strong focus on data analytics. Fresh out
+             of school, my mission is to dive into the professional scene, 
+             bringing smart solutions to the table by leveraging data to 
+             shake things up in the industry. I'm determined and ready to make a mark where engineering, management, and data analytics meet.
+            </p>
+            <h2>Let's make something special together</h2>
+            <p> If you are interested in working together, please contact me via email. If you have any other questions or collaboration
+                inquiries, feel free to contact me as well. I would love to hear from you!
+            </p>
+            <input type=button onClick="parent.location='contact.html'" value='Contact Me'>
+        </article>
+
+    </main>
+   
+
+</body>
+
+</html>
